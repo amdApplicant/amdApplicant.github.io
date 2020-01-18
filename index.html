@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>I &#128151 AMD</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">I &#128151 AMD </div>
+      <div class="list-group list-group-flush">
+        <button id="home" class="list-group-item list-group-item-action bg-light" onclick="switchLocation(0)">Home</button>
+        <button id="why" class="list-group-item list-group-item-action bg-light" onclick="switchLocation(1)">Why Choose Me?</button>
+        <button id="memes" class="list-group-item list-group-item-action bg-light" onclick="switchLocation(2)">Memes</button>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle" >Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://satavanan.ca/">My Website</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/satavanan-s">My Real GitHub</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4" style="text-align: center">SURPRISE!</h1>
+        <p>Through my research on Reddit, I'm predicting <code>/u/AMD_Tom </code> is reading this. I may be right or wrong but regardless of who you are, I'd like to thank you for your time and consideration!</p>
+        <p>I believe I'm the ideal candidate for Windows Core Software Tools Developer and I'm willing to create a website to prove it!</p>
+        <p>Click Toggle Menu and select <code>Why Choose Me?</code> to see how I fit every requirement.</p>
+        <p>Select <code>Memes</code> so I can brighten your day as promised!</p>
+        <p>Note: This website is not being hosted by my real GitHub account.</p
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+    function switchLocation(ind){
+      if(ind == 0){
+        window.location = "index.html";
+        console.log("hi");
+      }
+      else if(ind == 1){
+        window.location = "why.html"
+      }
+      else if(ind == 2){
+        window.location = "memes.html"
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>

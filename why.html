@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>I &#128151 AMD</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">I &#128151 AMD </div>
+      <div class="list-group list-group-flush">
+        <button id="home" class="list-group-item list-group-item-action bg-light" onclick="switchLocation(0)">Home</button>
+        <button id="why" class="list-group-item list-group-item-action bg-light" onclick="switchLocation(1)">Why Choose Me?</button>
+        <button id="memes" class="list-group-item list-group-item-action bg-light" onclick="switchLocation(2)">Memes</button>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle" >Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://satavanan.ca/">My Website</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/satavanan-s">My Real GitHub</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4" style="text-align: center">Why I'm an Ideal Candidate</h1>
+        <br>
+        <h3>Criteria based on WaterlooWorks job posting.</h3>
+        <br>
+        <h5>Let's look at the required skills.</h5>
+        <ul>
+          <li><b>Enjoys C++ development &#9989</b></li>
+          <p>I adore working with C++. Last term, I worked with C++ for my programming course in which I obtained a 93% average. I've gone through countless hours debugging code under a time constraint and looking back they were very fun experiences (kind of like solving a puzzle or riddle).</p>
+          <li><b>Experience with scripting, especially in Python &#9989</b></li>
+          <p>I am very proficient in Python and worked on many projects from image scrapers, websites, to linear regression models.</p>
+          <li><b>Comfortable learning a variety new languages and frameworks &#9989</b></li>
+          <p>I am very comfortable doing this at a very fast pace. This is evident through my experiences at Hackathons and even on my own time when I learned and applied Flask in less than a day.</p>
+          <li><b>Comfortable working in a Scrum team and taking an active role in team discussions. &#9989</b></li>
+          <p>The way I can learn is by being an active member in team discussions, I'm not only comfortable doing this I want to do this. Additionally, I have experience working in a Scrum Team at my internship in RBC.</p>
+          <li><b>Good communication skills &#9989</b></li>
+          <p>In university, I was able to understand concepts very quickly, as a result, I've developed my communication skills by explaining difficult concepts to my peers. Additionally, I've had success with presentations, especially during my time at RBC, where I presented in front of a panel of executives.</p>
+        </ul>
+        <h5>Let's look at the "Nice to haves"</h5>
+        <ul>
+          <li><b>Experience with Jenkins and/or Git &#9989</b></li>
+          <p>I've worked with Git for all my projects and during my tenure at RBC. I've never worked with Jenkins however, it seems very fascinating and I'll be more than willing to learn it before my work term.</p>
+          <li><b>Experience developing in a Windows environment &#9989</b></li>
+          <p>I've developed in a Windows Environment for all my Python projects. More specifically, I've used Virtualenv.</p>
+          <li><b>Enjoys tinkering with PCs and hardware components &#9989</b></li>
+          <p>Through my experiences in my Digital Circuits course, I've developed a love for tinkering with FPGAs. Additionally, I've been creating my old custom PCs since grade 9.</p>
+          <li><b>Experience with Scrum or Kanban &#9989</b></li>
+          <p>As mentioned before, I've worked in a Scrum team in an agile environment at RBC.</p>
+        </ul>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+    function switchLocation(ind){
+      if(ind == 0){
+        window.location = "index.html"
+      }
+      else if(ind == 1){
+        window.location = "why.html"
+      }
+      else if(ind == 2){
+        window.location = "memes.html"
+      }
+    }
+  </script>
+
+</body>
+
+</html>
